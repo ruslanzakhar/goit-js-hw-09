@@ -35,7 +35,7 @@ function onBtnSubmitClick(evt){
   const stepDelay = Number(evt.currentTarget.step.value);
   const amountEl = Number(evt.currentTarget.amount.value);
 
-  for(let i = 0; i < amountEl; i += 1){
+  for(let i = 1; i < amountEl; i += 1){
     createPromise(i, firstDelay);
     firstDelay += stepDelay;
   };
